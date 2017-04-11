@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+  <button id="button">确认填写</button>
+
+  <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+<script type="text/javascript">
+
+(function() {
+  var a=document.getElementById("aqi-input");
+  var b=document.getElementById("aqi-display");
+  var c=document.getElementById("button");
+  c.onclick=function(){
+    b.innerText=a.value;
+  }
+
+})();
+
+</script>
+</body>
+</html>
+<!-- 以后写代码的时候要仔细看清楚要求 出了问题挨个排查 
+      1.获取iddocument.getElementById("") 
+      2.输入框的值是value，html标签里的文本获取是 innerText属性
+      3.区别innerHTML innerText value
+ -->
