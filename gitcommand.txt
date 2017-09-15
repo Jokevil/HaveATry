@@ -1,4 +1,4 @@
 git diff 查看不痛 
     status 
     commit -m  '提交的提示/相关信息'
-    
+    哈哈哈哈哈我试试版本回退
