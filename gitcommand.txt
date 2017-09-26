@@ -1,7 +1,11 @@
+
+
+注意事项： 
+  1 需要git add 到 暂存区  才能提交 （git commit） 然后才 能 git push 到远程仓库 不然会报错(up-to-date)
+
 git diff 查看不同 
-    status 
-    commit -m  '提交的提示/相关信息'
-    哈哈哈哈哈我试试版本回退
+git status 
+git commit -m  '提交的提示/相关信息'
 
 
 
