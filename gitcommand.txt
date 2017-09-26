@@ -1,7 +1,14 @@
-git diff 查看不痛 
-    status 
-    commit -m  '提交的提示/相关信息'
-    哈哈哈哈哈我试试版本回退
+饿
+
+注意事项： 
+  1 需要git add 到 暂存区  才能提交 （git commit） 然后才 能 git push 到远程仓库 不然会报错(up-to-date)
+  2 如果远程仓库的文件 和 本地的文件 不匹配（文件不一致） 在push的时候会出问题
+        提示你（use "git pull" to merge the remote branch into yours 用pull将远程分支 合并到你 本地里）
+    pull 过后 再过一遍1的流程 git stauts 查询状态（nothing to commit, working tree clean）  再push 就没问题 （done）
+
+git diff 查看不同 
+git status 
+git commit -m  '提交的提示/相关信息'
 
 
 
@@ -10,3 +17,37 @@ git status 可以查看 提交的状态 （说明的修改  删除 新增的操作信息）
 git commit -m ‘提交的提示/相关信息’ 提交到 工作区
 
 git checkout 文件名 // 工作区的 撤销操作 
+
+
+
+#####如何删除 文件 并更新 到远程仓库
+git rm 文件名 （删除了工作区的文件）
+git re --cached 文件名（删除了暂存区的文件缓存）
+
+
+#####如何回退 版本  
+方法一 
+git log  可以查看操作日志  --》得到相应操作的id 
+git reset --hard 得到的id    --》 就退回到该操作的时候 
+
+方法二 
+在git add 过后
+git reset HEAD -- error.txt ---> 此操作是将之前的 error.txt 的 add 退回到没有提交
+
+#####退回到上一个版本
+git reset --hard HEAD^    ps：HEAD是为master分支分配的指针 ？
+# 退回到前100个版本
+git reset --hard HEAD~100
+
+
+分支的使用？ 
+
+
+#####如何查看 文件的 更新内容    D表示删除了  M表示修改  A表示添加
+$ git status -s
+D  error.txt
+M  gitcommand.txt
+此时D M为红色  表示工作区？？
+
+git add . 过后 
+此时D M为绿色  表示存到了.git 暂存区？？ 
