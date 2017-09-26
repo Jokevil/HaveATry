@@ -2,4 +2,11 @@ git diff 查看不痛
     status 
     commit -m  '提交的提示/相关信息'
     哈哈哈哈哈我试试版本回退
-asdasd
+
+
+
+git add （文件 或者. ） 添加到 本机的 暂存区 
+git status 可以查看 提交的状态 （说明的修改  删除 新增的操作信息）
+git commit -m ‘提交的提示/相关信息’ 提交到 工作区
+
+git checkout 文件名 // 工作区的 撤销操作 
