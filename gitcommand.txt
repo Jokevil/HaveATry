@@ -1,4 +1,4 @@
-git diff 查看不痛 
+git diff 查看不同 
     status 
     commit -m  '提交的提示/相关信息'
     哈哈哈哈哈我试试版本回退
@@ -10,3 +10,29 @@ git status 可以查看 提交的状态 （说明的修改  删除 新增的操作信息）
 git commit -m ‘提交的提示/相关信息’ 提交到 工作区
 
 git checkout 文件名 // 工作区的 撤销操作 
+
+
+
+#####如何删除 文件 并更新 到远程仓库
+
+#####如何回退 版本 
+git log  可以查看操作日志  --》得到相应操作的id 
+git reset --hard 得到的id    --》 就退回到该操作的时候 
+
+#####退回到上一个版本
+git reset --hard HEAD^    ps：HEAD是为master分支分配的指针 ？
+# 退回到前100个版本
+git reset --hard HEAD~100
+
+
+分支的使用 
+
+
+#####如何查看 文件的 更新内容    D表示删除了  M表示修改  A表示添加
+$ git status -s
+D  error.txt
+M  gitcommand.txt
+此时D M为红色  表示工作区？？
+
+git add . 过后 
+此时D M为绿色  表示存到了.git 暂存区？？ 
