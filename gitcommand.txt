@@ -1,4 +1,8 @@
 
+工作区：可见的文件目录
+暂存区：隐藏的.git文件下的index文件
+版本库：.git
+
 
 注意事项： 
   1 需要git add 到 暂存区  才能提交 （git commit） 然后才 能 git push 到远程仓库 不然会报错(up-to-date)
@@ -38,7 +42,7 @@ git reset --hard 得到的id    --》 就退回到该操作的时候
 
 方法二 
 在git add 过后
-git reset HEAD -- error.txt ---> 此操作是将之前的 error.txt 的 add 退回到没有提交
+git reset HEAD -- error.txt ---> 此操作是将之前的 error.txt 的 add 退回到没有提交时候
 
 
 #####退回到上一个版本
