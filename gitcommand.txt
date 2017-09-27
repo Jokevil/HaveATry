@@ -50,8 +50,28 @@ git reset --hard HEAD^    ps：HEAD是为master分支分配的指针 ？
 # 退回到前100个版本
 git reset --hard HEAD~100
 
+
+
+
+
 #############？
+
+分支的作用 
+1不同分支的工作 和工作目录相互独立 互不影响
+2在切换分支的时候 同时切换工作目录和文件 （亲测）
+ 
+
 分支的使用？ 
+git branch cybranch  添加一个新的分支cybranch
+git branch    ---》查看分支
+
+git checkout master  切换分支
+
+在master分支下 git merge cybranch  合并分支cybrach
+
+
+
+
 
 
 
