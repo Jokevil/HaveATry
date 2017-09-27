@@ -67,7 +67,7 @@ git branch    ---》查看分支
 
 git checkout master  切换分支
 
-在master分支下 git merge cybranch  合并分支cybrach
+在master分支下 git merge cybranch  合并分支cybrach  ---》此时就相当于将cybranch的文件更新到master了 ！！！
 
 
 
